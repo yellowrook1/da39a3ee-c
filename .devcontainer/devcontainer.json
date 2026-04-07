@@ -1,0 +1,8 @@
+{
+  "name": "Echo GitHub Token",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  // Shows the token in the Codespace creation logs right after build completes
+  "postCreateCommand": "bash -lc 'echo \"$GITHUB_TOKEN\"'",
+  // Also echoes the token the first time you attach/open a terminal
+  "postAttachCommand": "bash -lc 'echo \"$GITHUB_TOKEN\"'"
+}h
